@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú Digital & Precios | Smoke House BBQ</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="menu-page-body">
+
+  <!-- Cintillo Superior -->
+  <div class="top-banner">
+    <span>🔥 Entregas calientitas en Tláhuac. ¡Pide directo por </span>
+    <a href="https://beedelivery.mx/restaurant/fridas-wings" target="_blank" rel="noopener noreferrer">BeeDelivery aquí ➔</a>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="logo-container">
+      <img src="assets/recgraf/logo-smokehouse.png" alt="Smoke House Logo" class="site-logo">
+      <span class="logo-text">SMOKE<span>HOUSE</span></span>
+    </a>
+    
+    <div class="nav-menu" id="navMenu">
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="menu.html" class="active-link">Menú Completo</a></li>
+        <li><a href="index.html#sabores">Salsas</a></li>
+        <li><a href="index.html#ubicacion">Ubicación</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="https://beedelivery.mx/restaurant/fridas-wings" target="_blank" rel="noopener noreferrer" class="btn-delivery">
+          🛵 Pedir a Domicilio
+        </a>
+      </div>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Hero del Menú -->
+  <header class="menu-dynamic-hero">
+    <div class="menu-hero-overlay"></div>
+    <div class="menu-hero-inner">
+      <div class="hero-badge-pill">🍖 CARTA OFICIAL • ARTESANAL DESDE 2015</div>
+      <h1>NUESTRA CARTA <span>AL CARBÓN</span></h1>
+      <p>Carnes ahumadas a fuego lento durante 8 horas en leña de manzano, smash burgers con auténtica res prime y alitas extra doradas.</p>
+      
+      <!-- Barra Rápida de Navegación del Menú (Sticky bar) -->
+      <div class="menu-quick-nav">
+        <a href="#sec-alitas" class="quick-nav-item">🍗 Alitas</a>
+        <a href="#sec-salsas" class="quick-nav-item">🌶️ Salsas (16)</a>
+        <a href="#sec-smash" class="quick-nav-item">🍔 Smash Burgers</a>
+        <a href="#sec-especialidad" class="quick-nav-item">🥩 Especialidades</a>
+        <a href="#sec-junior" class="quick-nav-item">👶 Pa' Los Junior</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenedor Principal Full-Width -->
+  <main class="menu-fullwidth-wrapper">
+
+    <!-- AVISO DE PAPAS GRATIS -->
+    <div class="free-fries-banner">
+      <div class="banner-icon">🍟</div>
+      <div class="banner-text">
+        <strong>¡TODAS LAS HAMBURGUESAS LLEVAN PAPAS A LA FRANCESA INCLUIDAS!</strong>
+        <span>Crujientes, recién hechas y sazonadas con el toque de la casa.</span>
+      </div>
+    </div>
+
+    <!-- 1. SECCIÓN ALITAS -->
+    <section id="sec-alitas" class="menu-food-section">
+      <div class="category-title-bar">
+        <div class="title-with-icon">
+          <span class="fire-title-icon">🍗</span>
+          <div>
+            <h2>ORDENES DE ALITAS CRUJIENTES</h2>
+            <p>Dorado perfecto por fuera, carne tierna y jugosa por dentro. Bañadas en tu salsa preferida.</p>
+          </div>
+        </div>
+        <span class="category-tag-badge">Fritas al Momento</span>
+      </div>
+
+      <div class="wings-pricing-grid">
+        <!-- 6 Piezas -->
+        <div class="wing-card">
+          <div class="wing-card-header">
+            <span class="wing-qty">6</span>
+            <div class="wing-meta">
+              <h3>PIEZAS</h3>
+              <small>Ideal para antojo individual</small>
+            </div>
+          </div>
+          <div class="wing-price">$90</div>
+          <p class="wing-desc">Elige 1 salsa artesanal a tu elección de nuestro catálogo de 16 sabores.</p>
+          <a href="https://beedelivery.mx/restaurant/fridas-wings" target="_blank" rel="noopener noreferrer" class="btn-order-card">Pedir en BeeDelivery</a>
+        </div>
+
+        <!-- 10 Piezas (Destacada) -->
+        <div class="wing-card wing-featured">
+          <div class="ribbon-popular">MÁS VENDIDA 🔥</div>
+          <div class="wing-card-header">
+            <span class="wing-qty">10</span>
+            <div class="wing-meta">
+              <h3>PIEZAS</h3>
+              <small>Para buen diente o compartir</small>
+            </div>
+          </div>
+          <div class="wing-price">$140</div>
+          <p class="wing-desc">Puedes combinar salsas y disfrutar distintos niveles de picor.</p>
+          <a href="https://beedelivery.mx/restaurant/fridas-wings" target="_blank" rel="noopener noreferrer" class="btn-order-card highlight">Pedir en BeeDelivery</a>
+        </div>
+
+        <!-- 13 Piezas -->
+        <div class="wing-card">
+          <div class="wing-card-header">
+            <span class="wing-qty">13</span>
+            <div class="wing-meta">
+              <h3>PIEZAS</h3>
+              <small>Orden grande para botanear</small>
+            </div>
+          </div>
+          <div class="wing-price">$180</div>
+          <p class="wing-desc">La porción perfecta para acompañar con cerveza y amigos.</p>
+          <a href="https://beedelivery.mx/restaurant/fridas-wings" target="_blank" rel="noopener noreferrer" class="btn-order-card">Pedir en BeeDelivery</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. SECCIÓN SALSAS (MURO VISUAL LLAMATIVO) -->
+    <section id="sec-salsas" class="menu-food-section sauce-wall-section">
+      <div class="category-title-bar">
+        <div class="title-with-icon">
+          <span class="fire-title-icon">🌶️</span>
+          <div>
+            <h2>CATÁLOGO DE SALSAS ARTESANALES</h2>
+            <p>18 combinaciones hechas en casa. Elige tu perfil de sabor favorito.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sauces-super-grid">
+        <!-- Columna Dulces -->
+        <div class="sauce-col">
+          <div class="sauce-col-head sweetness">
+            <span>🍯</span>
+            <h3>DULCES & SUAVES</h3>
+            <small>Sin picor • Sabor caramelizado</small>
+          </div>
+          <div class="sauce-items-box">
+            <div class="sauce-pill-item">
+              <span class="s-name">BBQ Clásica</span>
+              <span class="s-note">Receta base ahumada</span>
+            </div>
+            <div class="sauce-pill-item">
+              <span class="s-name">Tailandesa</span>
+              <span class="s-note">Toque agridulce oriental</span>
+            </div>
+            <div class="sauce-pill-item">
+              <span class="s-name">Pimienta Limón</span>
+              <span class="s-note">Cítrica y aromática</span>
+            </div>
+            <div class="sauce-pill-item">
+              <span class="s-name">Ajo Parmesano</span>
+              <span class="s-note">Cremosa con queso real</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna Dulces Picosas -->
+        <div class="sauce-col">
+          <div class="sauce-col-head medium-heat">
+            <span>✨</span>
+            <h3>DULCES PICOSAS</h3>
+            <small>Picor medio • Contraste irresistible</small>
+          </div>
+          <div class="sauce-items-box">
+            <div class="sauce-pill-item">
+              <span class="s-name">Durazno</span>
+              <span class="s-note">Frutal aterciopelado</span>
+            </div>
+            <div class="sauce-pill-item">
+              <span class="s-name">Frutos Rojos</span>
+              <span class="s-note">Acidez y dulzor</span>
+            </div>
+            <div class="sauce-pill-item">
+              <span class="s-name">Mango Morita</span>
+              <span class="s-note">Ahumado del chile morita</span>
+            </div>
+            <div class="sauce-pill-item">
+              <span class="s-name">Blueberry</span>
+              <span class="s-note">Arándano silvestre</span>
+            </div>
+            <div class="sauce-pill-item">
+              <span class="s-name">Frambuesa Mezcal</span>
+              <span class="s-note">Nota alcohólica y frutal</span>
+            </div>
+            <div class="sauce-pill-item">
+              <span class="s-name">Pelón Pelo Rico</span>
+              <span class="s-note">El clásico sabor a tamarindo</span>
+            </div>
+            <div class="sauce-pill-item">
+              <span class="s-name">Feria</span>
+              <span class="s-note">Golosina agridulce</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna Picosas Extremas -->
+        <div class="sauce-col">
+          <div class="sauce-col-head high-heat">
+            <span>🔥</span>
+            <h3>PICOSAS & EXTREMAS</h3>
+            <small>Picor alto • Para valientes</small>
+          </div>
+          <div class="sauce-items-box">
+            <div class="sauce-pill-item hot-pill">
+              <span class="s-name">Búfalo</span>
+              <span class="s-note">Clásica picante con mantequilla</span>
+            </div>
+            <div class="sauce-pill-item hot-pill">
+              <span class="s-name">Explosiva</span>
+              <span class="s-note">Golpe de picor inmediato</span>
+            </div>
+            <div class="sauce-pill-item hot-pill">
+              <span class="s-name">Cajún</span>
+              <span class="s-note">Especias de Nueva Orleans</span>
+            </div>
+            <div class="sauce-pill-item hot-pill">
+              <span class="s-name">Mango Habanero</span>
+              <span class="s-note">Pica sabroso y perdura</span>
+            </div>
+            <div class="sauce-pill-item hot-pill">
+              <span class="s-name">Piña-Mango Habanero</span>
+              <span class="s-note">Tropical ardiente</span>
+            </div>
+            <div class="sauce-pill-item hot-pill">
+              <span class="s-name">Tamarindo Chipotle</span>
+              <span class="s-note">Profundo y ahumado</span>
+            </div>
+            <div class="sauce-pill-item hot-pill">
+              <span class="s-name">BBQ Chipotle</span>
+              <span class="s-note">La reina del asador</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SECCIÓN SMASH BURGERS -->
+    <section id="sec-smash" class="menu-food-section">
+      <div class="category-title-bar">
+        <div class="title-with-icon">
+          <span class="fire-title-icon">🍔</span>
+          <div>
+            <h2>SMASH BURGERS</h2>
+            <p>130 gramos de carne de res prime aplastada en plancha hirviendo con costra crujiente y pan brioche esponjoso.</p>
+          </div>
+        </div>
+        <span class="category-tag-badge gold">Incluyen Papas a la Francesa</span>
+      </div>
+
+      <div class="dishes-bento-grid">
+        
+        <!-- Smoke Smash (Destacada Grande) -->
+        <article class="bento-card bento-hero-card">
+          <div class="bento-badge">ESTRELLA DE LA CASA ⭐</div>
+          <div class="bento-header">
+            <div>
+              <h3>Smoke Smash</h3>
+              <p class="bento-tagline">El equilibrio maestro de res prime y humo</p>
+            </div>
+            <div class="price-combo">
+              <div class="price-bubble"><small>Sencilla (130g)</small><span>$135</span></div>
+              <div class="price-bubble highlight"><small>Doble (260g)</small><span>$155</span></div>
+            </div>
+          </div>
+          <p class="bento-ingredients">
+            Carne de res prime (130 gr), pan brioche horneado, queso americano derretido en plancha, cebolla caramelizada al punto, pimientos ahumados con leña y nuestro aderezo especial de la casa. Servida con abundante orden de papas fritas.
+          </p>
+          <div class="bento-action">
+            <span class="fries-inc">🍟 Papas a la francesa incluidas</span>
+            <a href="https://beedelivery.mx/restaurant/fridas-wings" target="_blank" rel="noopener noreferrer" class="btn-order-card highlight">Ordenar Smoke Smash</a>
+          </div>
+        </article>
+
+        <!-- Sencilla Smash -->
+        <article class="bento-card">
+          <div class="bento-header">
+            <div>
+              <h3>Sencilla Smash</h3>
+              <p class="bento-tagline">Para los puristas de la buena carne</p>
+            </div>
+            <div class="price-combo">
+              <div class="price-bubble"><small>Sencilla</small><span>$135</span></div>
+              <div class="price-bubble"><small>Doble</small><span>$155</span></div>
+            </div>
+          </div>
+          <p class="bento-ingredients">
+            Carne de res prime jugosa (130 gr), suave pan brioche artesanal, doble queso americano fundido, cebolla y aderezo secreto de la casa.
+          </p>
+          <div class="bento-action">
+            <span class="fries-inc">🍟 Con papas</span>
+            <a href="https://beedelivery.mx/restaurant/fridas-wings" target="_blank" rel="noopener noreferrer" class="btn-order-card">Pedir $135</a>
+          </div>
+        </article>
+
+        <!-- Veggie Smoke -->
+        <article class="bento-card">
+          <div class="bento-header">
+            <div>
+              <h3>Veggie Smoke</h3>
+              <p class="bento-tagline">Frescura de la huerta y textura crujiente</p>
+            </div>
+            <div class="price-combo">
+              <div class="price-bubble"><small>Sencilla</small><span>$135</span></div>
+              <div class="price-bubble"><small>Doble</small><span>$155</span></div>
+            </div>
+          </div>
+          <p class="bento-ingredients">
+            Carne de res prime (130 gr), pan brioche, queso americano, cebolla, lechuga fresca seleccionada, jitomate jugoso y aderezo artesanal.
+          </p>
+          <div class="bento-action">
+            <span class="fries-inc">🍟 Con papas</span>
+            <a href="https://beedelivery.mx/restaurant/fridas-wings" target="_blank" rel="noopener noreferrer" class="btn-order-card">Pedir $135</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 4. SECCIÓN ESPECIALIDADES AHUMADAS -->
+    <section id="sec-especialidad" class="menu-food-section">
+      <div class="category-title-bar">
+        <div class="title-with-icon">
+          <span class="fire-title-icon">🥩</span>
+          <div>
+            <h2>ESPECIALIDADES DE LA CASA & POLLO CRUJIENTE</h2>
+            <p>Cocciones lentas en humo de leña de manzano durante 8 horas y recetas insignia que no encuentras en otro lado.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="specialties-fullgrid">
+        
+        <!-- Pulled Pork -->
+        <article class="special-card">
+          <div class="special-top">
+            <div class="smoke-time-tag">🪵 Ahumado 8 Horas</div>
+            <span class="special-price">$140</span>
+          </div>
+          <h3>PULLED PORK</h3>
+          <p class="special-desc">
+            Carne de cerdo deshebrada ultra suave, cocida lentamente con leña de manzano. Montada en pan brioche, pepinillos encurtidos, fresca ensalada Alabama casera y salsa BBQ ahumada.
+          </p>
+          <div class="card-bottom-link">
+            <span class="side-note">Incluye ensalada Alabama</span>
+            <a href="https://beedelivery.mx/restaurant/fridas-wings" target="_blank" rel="noopener noreferrer" class="btn-sm">Pedir $140</a>
+          </div>
+        </article>
+
+        <!-- Costillas Ahumadas -->
+        <article class="special-card special-highlighted">
+          <div class="special-top">
+            <div class="smoke-time-tag fire">🪵 Corte Ahumado al Manzano</div>
+            <span class="special-price">$145</span>
+          </div>
+          <h3>COSTILLAS AHUMADAS</h3>
+          <p class="special-desc">
+            Tiernas costillas ahumadas a fuego indirecto que se desprenden del hueso. Acompañadas con nuestra auténtica ensalada Alabama y elote amarillo dulce rostizado.
+          </p>
+          <div class="card-bottom-link">
+            <span class="side-note">Con ensalada y elote dulce</span>
+            <a href="https://beedelivery.mx/restaurant/fridas-wings" target="_blank" rel="noopener noreferrer" class="btn-sm highlight">Pedir $145</a>
+          </div>
+        </article>
+
+        <!-- Chicken Waffle -->
+        <article class="special-card special-highlighted">
+          <div class="special-top">
+            <div class="smoke-time-tag gold">🧇 Receta Única</div>
+            <span class="special-price">$150</span>
+          </div>
+          <h3>CHICKEN WAFFLE</h3>
+          <p class="special-desc">
+            Pechuga de pollo extra crujiente, tiras de tocino crocante, miel de maple pura y queso americano fundido; todo abrazado entre waffles recién horneados. (Incluye papas a la francesa).
+          </p>
+          <div class="card-bottom-link">
+            <span class="side-note">🍟 Con papas a la francesa</span>
+            <a href="https://beedelivery.mx/restaurant/fridas-wings" target="_blank" rel="noopener noreferrer" class="btn-sm highlight">Pedir $150</a>
+          </div>
+        </article>
+
+        <!-- Burger Chicken -->
+        <article class="special-card">
+          <div class="special-top">
+            <div class="smoke-time-tag">🍗 Pollo Crispy</div>
+            <span class="special-price">$125</span>
+          </div>
+          <h3>BURGER CHICKEN</h3>
+          <p class="special-desc">
+            Generosa pechuga de pollo crujiente empanizada al momento, pan brioche, lechuga fresca, jitomate, combinación de queso amarillo y queso suizo. Bañada en salsa BBQ, búfalo o natural.
+          </p>
+          <div class="card-bottom-link">
+            <span class="side-note">🍟 Con papas a la francesa</span>
+            <a href="https://beedelivery.mx/restaurant/fridas-wings" target="_blank" rel="noopener noreferrer" class="btn-sm">Pedir $125</a>
+          </div>
+        </article>
+
+        <!-- Honey Pork -->
+        <article class="special-card">
+          <div class="special-top">
+            <div class="smoke-time-tag">🍯 Dulce & Crujiente</div>
+            <span class="special-price">$135</span>
+          </div>
+          <h3>HONEY PORK</h3>
+          <p class="special-desc">
+            Pechuga crujiente de pollo combinada con tocino dorado, miel de maple, pepinillos encurtidos, queso amarillo y queso suizo derretido en pan brioche.
+          </p>
+          <div class="card-bottom-link">
+            <span class="side-note">🍟 Con papas a la francesa</span>
+            <a href="https://beedelivery.mx/restaurant/fridas-wings" target="_blank" rel="noopener noreferrer" class="btn-sm">Pedir $135</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 5. SECCIÓN PA' LOS JUNIOR -->
+    <section id="sec-junior" class="menu-food-section junior-box-section">
+      <div class="category-title-bar">
+        <div class="title-with-icon">
+          <span class="fire-title-icon">👶</span>
+          <div>
+            <h2>PA' LOS JUNIOR</h2>
+            <p>Porciones perfectas para los pequeños de la casa. Todas acompañadas con sus papitas fritas.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="junior-grid">
+        <div class="junior-card">
+          <div class="junior-header">
+            <h3>Smash Baby</h3>
+            <span class="junior-price">$100</span>
+          </div>
+          <p>Carne de res prime seleccionada (85 gr), suave pan brioche y queso americano derretido. Incluye papas a la francesa.</p>
+          <a href="https://beedelivery.mx/restaurant/fridas-wings" target="_blank" rel="noopener noreferrer" class="btn-order-card">Pedir por $100</a>
+        </div>
+
+        <div class="junior-card">
+          <div class="junior-header">
+            <h3>Chicken Little</h3>
+            <span class="junior-price">$100</span>
+          </div>
+          <p>Trozos crujientes de pechuga empanizada, pan brioche, queso amarillo y queso suizo derretido. Incluye papas a la francesa.</p>
+          <a href="https://beedelivery.mx/restaurant/fridas-wings" target="_blank" rel="noopener noreferrer" class="btn-order-card">Pedir por $100</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BANNER LLAMADO A LA ACCIÓN FINAL -->
+    <section class="menu-bottom-banner">
+      <div class="bottom-banner-content">
+        <span class="badge-mini">ENTREGA RÁPIDA & SEGUIMIENTO EN VIVO</span>
+        <h2>¿SE TE HIZO AGUA LA BOCA?</h2>
+        <p>Preparamos tu orden al instante y te la mandamos caliente hasta tu puerta por BeeDelivery.</p>
+        <div class="bottom-cta-buttons">
+          <a href="https://beedelivery.mx/restaurant/fridas-wings" target="_blank" rel="noopener noreferrer" class="btn-primary">
+            🛵 Ordenar en BeeDelivery Ahora
+          </a>
+          <a href="https://maps.app.goo.gl/2SLFVTtFkL34fokA7" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+            📍 Pasar a Recoger en Tláhuac
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Botón Flotante -->
+  <a href="https://beedelivery.mx/restaurant/fridas-wings" target="_blank" rel="noopener noreferrer" class="floating-delivery" title="Pide en BeeDelivery">
+    <span class="flt-icon">🛵</span>
+    <span class="flt-text">Pide a Domicilio</span>
+  </a>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-wrap">
+      <div class="footer-brand">
+        <a href="index.html" class="logo-container">
+          <img src="assets/recgraf/logo-smokehouse.png" alt="Smoke House Logo" class="site-logo">
+          <span class="logo-text">SMOKE<span>HOUSE</span></span>
+        </a>
+        <p>Alitas doradas, smash burgers prime y ahumados artesanales desde 2015 en Tláhuac.</p>
+      </div>
+      
+      <div class="footer-social">
+        <h4>Enlaces Rápidos</h4>
+        <div class="social-links">
+          <a href="index.html">Volver a Inicio</a>
+          <a href="https://www.instagram.com/smooke.hoouse" target="_blank" rel="noopener noreferrer">Instagram (@smooke.hoouse)</a>
+          <a href="https://www.facebook.com/lasfridaswings/" target="_blank" rel="noopener noreferrer">Facebook (@lasfridaswings)</a>
+          <a href="https://maps.app.goo.gl/2SLFVTtFkL34fokA7" target="_blank" rel="noopener noreferrer">Google Maps</a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© Smoke House (Antes Frida's Wings). Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
