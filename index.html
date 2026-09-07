@@ -130,101 +130,311 @@
       <a href="menu.html" class="btn-primary">Ver Menú Completo con Todas las Salsas ➔</a>
     </div>
   </section>
+<!-- Módulo Unificado: Baña tus Alitas & Catálogo de Salsas -->
+<section id="sabores" class="section dark-section sauce-master-section">
+  <div class="section-header">
+    <span class="section-tag">EXPERIENCIA INTERACTIVA & ARTESANAL</span>
+    <h2>BAÑA TUS ALITAS <span>EN VIVO</span></h2>
+    <p class="section-subtitle">
+      Más de 16 salsas artesanales de la casa. Selecciona tu perfil favorito, 
+      descubre sus notas de sabor y mira cómo se baña tu orden en tiempo real.
+    </p>
+  </div>
 
-<!-- Módulo Interactivo de Salsas: ¡Elige tu Favorita! -->
-  <section id="sabores" class="section dark-section sauce-showcase">
-    <div class="section-header">
-      <span class="section-tag">PERSONALIZA TU PEDIDO</span>
-      <h2>MÁS DE 16 SALSAS <span>ARTESANALES</span></h2>
-      <p class="section-subtitle">
-        ¿Eres de sabores ahumados, glaseados dulces o buscas el reto de un picor intenso? 
-        Elige tu perfil favorito y déjate sorprender con nuestras recetas de la casa.
-      </p>
+  <!-- Pestañas de Filtrado Rápido -->
+  <div class="sauce-tabs">
+    <button class="sauce-tab-btn active" data-tab="dulces">
+      🍯 Dulces & Suaves
+    </button>
+    <button class="sauce-tab-btn" data-tab="dulces-picosas">
+      ✨ Dulces Picosas
+    </button>
+    <button class="sauce-tab-btn" data-tab="picosas">
+      🔥 Picosas & Extremas
+    </button>
+  </div>
+
+  <div class="wings-master-grid">
+    
+    <!-- LADO IZQUIERDO: Visor Visual de Alitas (Enfoque 1: Capas PNG) -->
+    <div class="master-viewer-col">
+      <div class="simulator-viewer">
+        <div class="sauce-splash-glow" id="sauceGlow"></div>
+
+        <!-- Capa 1: Alitas Doradas Fijas -->
+        <img src="assets/recgraf/alitas-base.png" alt="Alitas doradas sin salsa" class="layer-base-wings">
+
+        <!-- Capa 2: Salsa Superpuesta Dinámica -->
+        <img id="sauceLayer" src="assets/recgraf/salsa-bbq.png" alt="Salsa seleccionada" class="layer-sauce-overlay active">
+
+        <!-- Etiqueta Flotante de Salsa Activa -->
+        <div class="sauce-active-tag">
+          <span id="activeSauceIcon">🍖</span>
+          <span id="activeSauceName">BBQ Clásica</span>
+        </div>
+      </div>
+
+      <!-- Tarjeta Dinámica de Notas de Cata -->
+      <div class="sauce-tasting-notes">
+        <div class="tasting-header">
+          <span class="tasting-badge" id="tastingCategoryBadge">DULCES & SUAVES</span>
+          <span class="tasting-heat" id="tastingHeat">Picor: Nulo • Sabor Ahumado</span>
+        </div>
+        <p id="tastingDescription">
+          Receta base caramelizada cocida a fuego lento con notas de humo dulce y especias tradicionales de BBQ artesanal.
+        </p>
+      </div>
     </div>
 
-    <!-- Selector / Pestañas de Estilos de Salsa -->
-    <div class="sauce-tabs">
-      <button class="sauce-tab-btn active" data-category="dulces">
-        🍯 Dulces & Suaves
-      </button>
-      <button class="sauce-tab-btn" data-category="dulces-picosas">
-        ✨ Dulces Picosas
-      </button>
-      <button class="sauce-tab-btn" data-category="picosas">
-        🔥 Picosas & Extremas
-      </button>
-    </div>
-
-    <!-- Contenido de Salsas -->
-    <div class="sauce-display-area">
+    <!-- LADO DERECHO: Catálogo Interactivo de Botones -->
+    <div class="master-picker-col">
       
-      <!-- Categoría 1: Dulces -->
-      <div class="sauce-category-panel active" id="dulces">
-        <div class="panel-info">
-          <h3>Glaseados Dulces & Cítricos</h3>
-          <p>Para quienes disfrutan el equilibrio caramelizado, notas aromáticas y el clásico sabor BBQ sin picor.</p>
+      <!-- Grupo 1: Dulces -->
+      <div class="sauce-group-panel active" id="group-dulces">
+        <div class="group-title">
+          <h4>🍯 GLASEADOS DULCES & CÍTRICOS</h4>
+          <small>Equilibrio suave y caramelizado sin picante</small>
         </div>
-        <div class="sauce-tag-grid">
-          <div class="sauce-badge"><span class="badge-icon">🍖</span> BBQ Clásica</div>
-          <div class="sauce-badge"><span class="badge-icon">🥢</span> Tailandesa</div>
-          <div class="sauce-badge"><span class="badge-icon">🍋</span> Pimienta Limón</div>
-          <div class="sauce-badge"><span class="badge-icon">🧀</span> Ajo Parmesano</div>
+        <div class="sauce-buttons-layout">
+          <button class="sauce-chip-btn active" 
+                  data-sauce="bbq" 
+                  data-name="BBQ Clásica" 
+                  data-icon="🍖" 
+                  data-color="#ff5500" 
+                  data-category="DULCES & SUAVES"
+                  data-heat="Picor: Nulo • Caramelo Ahumado"
+                  data-desc="Receta base caramelizada cocida a fuego lento con notas de humo dulce y especias tradicionales de BBQ artesanal.">
+            <span class="chip-icon">🍖</span> BBQ Clásica
+          </button>
+
+          <button class="sauce-chip-btn" 
+                  data-sauce="tailandesa" 
+                  data-name="Tailandesa" 
+                  data-icon="🥢" 
+                  data-color="#b83804" 
+                  data-category="DULCES & SUAVES"
+                  data-heat="Picor: Nulo • Agridulce Oriental"
+                  data-desc="Inspiración oriental agridulce con sésamo tostado, jengibre y un sutil glaseado brillante.">
+            <span class="chip-icon">🥢</span> Tailandesa
+          </button>
+
+          <button class="sauce-chip-btn" 
+                  data-sauce="pimienta-limon" 
+                  data-name="Pimienta Limón" 
+                  data-icon="🍋" 
+                  data-color="#ffb700" 
+                  data-category="DULCES & SUAVES"
+                  data-heat="Picor: Muy Bajo • Cítrico Fresco"
+                  data-desc="Toque fresco de limón amarillo deshidratado con el crunch aromático de la pimienta negra molida gruesa.">
+            <span class="chip-icon">🍋</span> Pimienta Limón
+          </button>
+
+          <button class="sauce-chip-btn" 
+                  data-sauce="ajo-parmesano" 
+                  data-name="Ajo Parmesano" 
+                  data-icon="🧀" 
+                  data-color="#d4ba7d" 
+                  data-category="DULCES & SUAVES"
+                  data-heat="Picor: Nulo • Cremoso & Especiado"
+                  data-desc="Mantequilla clarificada con ajo dorado rostizado y abundante lluvia de queso parmesano genuino.">
+            <span class="chip-icon">🧀</span> Ajo Parmesano
+          </button>
         </div>
       </div>
 
-      <!-- Categoría 2: Dulces Picosas -->
-      <div class="sauce-category-panel" id="dulces-picosas">
-        <div class="panel-info">
-          <h3>El Contraste Dulce-Picoso</h3>
-          <p>La combinación favorita de la casa: toques frutales y botanas emblemáticas con un toque picante que engancha.</p>
+      <!-- Grupo 2: Dulces Picosas -->
+      <div class="sauce-group-panel" id="group-dulces-picosas">
+        <div class="group-title">
+          <h4>✨ EL CONTRASTE DULCE-PICOSO</h4>
+          <small>Frutas de temporada, botanas y licor artesanal</small>
         </div>
-        <div class="sauce-tag-grid">
-          <div class="sauce-badge"><span class="badge-icon">🍑</span> Durazno</div>
-          <div class="sauce-badge"><span class="badge-icon">🍓</span> Frutos Rojos</div>
-          <div class="sauce-badge"><span class="badge-icon">🥭</span> Mango Morita</div>
-          <div class="sauce-badge"><span class="badge-icon">🫐</span> Blueberry</div>
-          <div class="sauce-badge"><span class="badge-icon">🥃</span> Frambuesa Mezcal</div>
-          <div class="sauce-badge"><span class="badge-icon">🍬</span> Pelón Pelo Rico</div>
-          <div class="sauce-badge"><span class="badge-icon">🎡</span> Feria</div>
+        <div class="sauce-buttons-layout">
+          <button class="sauce-chip-btn" 
+                  data-sauce="durazno" 
+                  data-name="Durazno" 
+                  data-icon="🍑" 
+                  data-color="#e06c1b" 
+                  data-category="DULCES PICOSAS"
+                  data-heat="Picor: Medio-Bajo • Frutal"
+                  data-desc="Reducción espesa de duraznos en almíbar combinados con hojuelas de chile seco y páprika.">
+            <span class="chip-icon">🍑</span> Durazno
+          </button>
+
+          <button class="sauce-chip-btn" 
+                  data-sauce="frutos-rojos" 
+                  data-name="Frutos Rojos" 
+                  data-icon="🍓" 
+                  data-color="#8a0c24" 
+                  data-category="DULCES PICOSAS"
+                  data-heat="Picor: Medio • Acidez Frutal"
+                  data-desc="Compota artesanal de zarzamoras, fresas y arándanos con un remate picante que equilibra la grasa del pollo.">
+            <span class="chip-icon">🍓</span> Frutos Rojos
+          </button>
+
+          <button class="sauce-chip-btn" 
+                  data-sauce="mango-morita" 
+                  data-name="Mango Morita" 
+                  data-icon="🥭" 
+                  data-color="#ab410d" 
+                  data-category="DULCES PICOSAS"
+                  data-heat="Picor: Medio • Humo & Pulpa"
+                  data-desc="El dulzor tropical del mango manila fundido con el perfume tostado y ahumado del chile morita.">
+            <span class="chip-icon">🥭</span> Mango Morita
+          </button>
+
+          <button class="sauce-chip-btn" 
+                  data-sauce="blueberry" 
+                  data-name="Blueberry" 
+                  data-icon="🫐" 
+                  data-color="#552277" 
+                  data-category="DULCES PICOSAS"
+                  data-heat="Picor: Medio-Bajo • Dulzor Silvestre"
+                  data-desc="Glaseado oscuro de arándanos azules con un sutil picor que realza la piel crujiente.">
+            <span class="chip-icon">🫐</span> Blueberry
+          </button>
+
+          <button class="sauce-chip-btn" 
+                  data-sauce="frambuesa-mezcal" 
+                  data-name="Frambuesa Mezcal" 
+                  data-icon="🥃" 
+                  data-color="#690924" 
+                  data-category="DULCES PICOSAS"
+                  data-heat="Picor: Medio • Espadín & Fruto"
+                  data-desc="Frambuesas reducidas a fuego lento con notas herbales y ahumadas de mezcal artesanal.">
+            <span class="chip-icon">🥃</span> Frambuesa Mezcal
+          </button>
+
+          <button class="sauce-chip-btn" 
+                  data-sauce="pelon-pelo-rico" 
+                  data-name="Pelón Pelo Rico" 
+                  data-icon="🍬" 
+                  data-color="#5c1c09" 
+                  data-category="DULCES PICOSAS"
+                  data-heat="Picor: Medio • Sabor Dulcería"
+                  data-desc="Homenaje al dulce mexicano de pulpa de tamarindo picosito, acidito y adictivo.">
+            <span class="chip-icon">🍬</span> Pelón Pelo Rico
+          </button>
+
+          <button class="sauce-chip-btn" 
+                  data-sauce="feria" 
+                  data-name="Feria" 
+                  data-icon="🎡" 
+                  data-color="#c43b00" 
+                  data-category="DULCES PICOSAS"
+                  data-heat="Picor: Medio • Chamoy Clásico"
+                  data-desc="Receta festiva con base de chamoy casero, limón y chilito en polvo estilo feria tradicional.">
+            <span class="chip-icon">🎡</span> Feria
+          </button>
         </div>
       </div>
 
-      <!-- Categoría 3: Picosas -->
-      <div class="sauce-category-panel" id="picosas">
-        <div class="panel-info">
-          <h3>Fuego & Tradición</h3>
-          <p>Chiles toreados, chipotle ahumado, mezclas cajún y el poder del habanero para los verdaderos amantes del picante.</p>
+      <!-- Grupo 3: Picosas -->
+      <div class="sauce-group-panel" id="group-picosas">
+        <div class="group-title">
+          <h4>🔥 FUEGO & PICOR POTENTE</h4>
+          <small>Para quienes buscan el auténtico golpe de chile</small>
         </div>
-        <div class="sauce-tag-grid">
-          <div class="sauce-badge flame-badge"><span class="badge-icon">⚡</span> Búfalo</div>
-          <div class="sauce-badge flame-badge"><span class="badge-icon">💣</span> Explosiva</div>
-          <div class="sauce-badge flame-badge"><span class="badge-icon">🧂</span> Cajún</div>
-          <div class="sauce-badge flame-badge"><span class="badge-icon">🌶️</span> Mango Habanero</div>
-          <div class="sauce-badge flame-badge"><span class="badge-icon">🍍</span> Piña-Mango Habanero</div>
-          <div class="sauce-badge flame-badge"><span class="badge-icon">🍂</span> Tamarindo Chipotle</div>
-          <div class="sauce-badge flame-badge"><span class="badge-icon">💨</span> BBQ Chipotle</div>
+        <div class="sauce-buttons-layout">
+          <button class="sauce-chip-btn" 
+                  data-sauce="bufalo" 
+                  data-name="Búfalo Original" 
+                  data-icon="⚡" 
+                  data-color="#ff3b00" 
+                  data-category="PICOSAS & EXTREMAS"
+                  data-heat="Picor: Alto • Clásica Americana"
+                  data-desc="La receta original con base de vinagre añejado, mantequilla caliente y salsa picante clásica.">
+            <span class="chip-icon">⚡</span> Búfalo
+          </button>
+
+          <button class="sauce-chip-btn" 
+                  data-sauce="explosiva" 
+                  data-name="Explosiva" 
+                  data-icon="💣" 
+                  data-color="#b80c00" 
+                  data-category="PICOSAS & EXTREMAS"
+                  data-heat="Picor: Muy Alto • Fuego Directo"
+                  data-desc="Combinación especial de chiles secos concentrados que detona un picor rápido e intenso.">
+            <span class="chip-icon">💣</span> Explosiva
+          </button>
+
+          <button class="sauce-chip-btn" 
+                  data-sauce="cajun" 
+                  data-name="Cajún" 
+                  data-icon="🧂" 
+                  data-color="#8a300a" 
+                  data-category="PICOSAS & EXTREMAS"
+                  data-heat="Picor: Medio-Alto • Especias Criollas"
+                  data-desc="Mezcla de pimienta de cayena, orégano, pimentón dulce y cebolla en polvo estilo Nueva Orleans.">
+            <span class="chip-icon">🧂</span> Cajún
+          </button>
+
+          <button class="sauce-chip-btn" 
+                  data-sauce="mango-habanero" 
+                  data-name="Mango Habanero" 
+                  data-icon="🌶️" 
+                  data-color="#ff5500" 
+                  data-category="PICOSAS & EXTREMAS"
+                  data-heat="Picor: Muy Alto • Tropical Bravo"
+                  data-desc="Entrada aromática y jugosa de mango que da paso al fuego auténtico del chile habanero fresco.">
+            <span class="chip-icon">🌶️</span> Mango Habanero
+          </button>
+
+          <button class="sauce-chip-btn" 
+                  data-sauce="pina-mango-habanero" 
+                  data-name="Piña-Mango Habanero" 
+                  data-icon="🍍" 
+                  data-color="#ff7b00" 
+                  data-category="PICOSAS & EXTREMAS"
+                  data-heat="Picor: Muy Alto • Cítrico Ardiente"
+                  data-desc="Doble acidez de piña asada y mango con el poder demoledor del habanero tatemado.">
+            <span class="chip-icon">🍍</span> Piña-Mango Hab.
+          </button>
+
+          <button class="sauce-chip-btn" 
+                  data-sauce="tamarindo-chipotle" 
+                  data-name="Tamarindo Chipotle" 
+                  data-icon="🍂" 
+                  data-color="#542416" 
+                  data-category="PICOSAS & EXTREMAS"
+                  data-heat="Picor: Alto • Ahumado Profundo"
+                  data-desc="Pulpa concentrada de tamarindo hervida con chipotle meco ahumado en madera.">
+            <span class="chip-icon">🍂</span> Tamarindo Chipotle
+          </button>
+
+          <button class="sauce-chip-btn" 
+                  data-sauce="bbq-chipotle" 
+                  data-name="BBQ Chipotle" 
+                  data-icon="💨" 
+                  data-color="#4a180b" 
+                  data-category="PICOSAS & EXTREMAS"
+                  data-heat="Picor: Medio-Alto • BBQ con Garra"
+                  data-desc="Nuestra salsa BBQ insignia enriquecida con puré de chipotles en adobo casero.">
+            <span class="chip-icon">💨</span> BBQ Chipotle
+          </button>
         </div>
       </div>
 
     </div>
 
-    <!-- Invitación / Call to Action -->
-    <div class="sauce-cta-box">
-      <div class="sauce-cta-content">
-        <span class="cta-mini-tag">¿YA TIENES TU FAVORITA?</span>
-        <h3>PIDE TU ORDEN COMBINADA</h3>
-        <p>En órdenes de 10 y 13 piezas puedes bañar tus alitas o boneless con distintas salsas.</p>
-      </div>
-      <div class="sauce-cta-buttons">
-        <a href="https://beedelivery.mx/restaurant/fridas-wings" target="_blank" rel="noopener noreferrer" class="btn-primary">
-          🛵 Pedir en BeeDelivery
-        </a>
-        <a href="menu.html#salsas" class="btn-secondary">
-          📖 Ver en Menú
-        </a>
-      </div>
+  </div>
+
+  <!-- Llamado a la Acción Inferior Integrado -->
+  <div class="sauce-cta-box master-cta-box">
+    <div class="sauce-cta-content">
+      <span class="cta-mini-tag">¿YA TIENES TUS FAVORITAS?</span>
+      <h3>PIDE TU ORDEN COMBINADA</h3>
+      <p>En órdenes de 10 y 13 piezas puedes elegir distintas salsas y bañarlas como más te guste.</p>
     </div>
-  </section>
+    <div class="sauce-cta-buttons">
+      <a href="https://beedelivery.mx/restaurant/fridas-wings" target="_blank" rel="noopener noreferrer" class="btn-primary">
+        🛵 Pedir en BeeDelivery Ahora
+      </a>
+      <a href="menu.html#sec-salsas" class="btn-secondary">
+        📖 Ver Precios en el Menú
+      </a>
+    </div>
+  </div>
+</section>
 
   <!-- Reseñas -->
   <section id="resenas" class="section review-callout">
@@ -310,7 +520,7 @@
       </div>
     </div>
     <div class="copyright">
-      <p>© Smoke House (Antes Frida's Wings). Potenciado por VR+Colabs</p>
+      <p>© Smoke House (Antes Frida's Wings). Todos los derechos reservados.</p>
     </div>
   </footer>
 
